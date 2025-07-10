@@ -17,7 +17,7 @@ pub struct Led {
 
 impl Led {
     fn new(pin: Pin<PA15, Disabled<Floating>>) -> Led {
-        Led { pin: pin.into_push_pull_output(), }
+        Led { pin: pin.into_push_pull_output() }
     }
 
     /// LEDを点灯する
